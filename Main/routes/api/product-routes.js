@@ -44,6 +44,15 @@ router.get('/:id', (req, res) => {
 
 // creat new product
 router.post('/', (req, res) => {
+  Product.create(req.body)
+    .then((products) => res.json(products))
+    .catch((err) => {
+      console.log(err);
+      res.status(400).json(err);
+    });
+});
+
+
   /* req.body should look like this...
     {
       product_name: "Basketball",
@@ -72,7 +81,6 @@ router.post('/', (req, res) => {
       console.log(err);
       res.status(400).json(err);
     });
-});
 
 // update product
 router.put('/:id', (req, res) => {
