@@ -1,0 +1,14 @@
+# <Manager>
+
+## Description
+
+This is the backend of ecommerce and it is a way to manage product,categories, and tags using express.js api and a mysql database.
+
+## Installation
+
+-npm i
+-mysql -u root -p
+-source db/schema.sql
+-quit
+-node seeds/index.js
+-node server.js
