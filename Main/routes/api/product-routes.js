@@ -44,13 +44,13 @@ router.get('/:id', async (req, res) => {
 
 // creat new product
 router.post('/', (req, res) => {
-  Product.create(req.body)
-    .then((products) => res.json(products))
-    .catch((err) => {
-      console.log(err);
-      res.status(400).json(err);
-    });
-});
+//   Product.create(req.body)
+//     .then((products) => res.json(products))
+//     .catch((err) => {
+//       console.log(err);
+//       res.status(400).json(err);
+//     });
+// });
 
 
   /* req.body should look like this...
@@ -81,6 +81,7 @@ router.post('/', (req, res) => {
       console.log(err);
       res.status(400).json(err);
     });
+  });
 
 // update product
 router.put('/:id', (req, res) => {
