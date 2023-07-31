@@ -6,6 +6,7 @@ This is the backend of ecommerce and it is a way to manage product,categories, a
 
 ## Installation
 
+-cd main
 -npm i
 -mysql -u root -p
 -source db/schema.sql
