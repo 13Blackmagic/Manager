@@ -1,8 +1,9 @@
+// Purpose: To seed the database with product data
 const { Product } = require('../models');
-
-const productData = [
+// Product data
+const productData = [ 
   {
-    product_name: 'Plain T-Shirt',
+    product_name: 'Plain T-Shirt', 
     price: 14.99,
     stock: 14,
     category_id: 1,
@@ -32,7 +33,7 @@ const productData = [
     category_id: 2,
   },
 ];
-
+// Bulk create the product data
 const seedProducts = () => Product.bulkCreate(productData);
-
+// Export the seedProducts function
 module.exports = seedProducts;

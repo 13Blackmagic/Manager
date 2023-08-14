@@ -1,5 +1,6 @@
+// Purpose: to seed the product_tag table in the ecommerce_db database with data
 const { ProductTag } = require('../models');
-
+// Product tag data
 const productTagData = [
   {
     product_id: 1,
@@ -50,7 +51,7 @@ const productTagData = [
     tag_id: 3,
   },
 ];
-
+// Bulk create the product tag data
 const seedProductTags = () => ProductTag.bulkCreate(productTagData);
-
+// Export the seedProductTags function
 module.exports = seedProductTags;
