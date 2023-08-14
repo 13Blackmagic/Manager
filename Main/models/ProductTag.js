@@ -1,9 +1,10 @@
+// imports sequelize constructor from main config file
 const { Model, DataTypes } = require('sequelize');
-
+// imports connection to database from main config file
 const sequelize = require('../config/connection');
-
+// creates ProductTag model
 class ProductTag extends Model {}
-
+// creates fields/columns for ProductTag model
 ProductTag.init(
   {
     id: {
@@ -35,5 +36,5 @@ ProductTag.init(
     modelName: 'product_tag',
   }
 );
-
+// exports ProductTag model
 module.exports = ProductTag;
