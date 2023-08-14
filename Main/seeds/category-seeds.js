@@ -1,3 +1,4 @@
+// Purpose: To seed the category table with data
 const { Category } = require('../models');
 
 const categoryData = [
@@ -18,6 +19,6 @@ const categoryData = [
   },
 ];
 
-const seedCategories = () => Category.bulkCreate(categoryData);
+const seedCategories = () => Category.bulkCreate(categoryData); // Bulk create the category data
 
-module.exports = seedCategories;
+module.exports = seedCategories; // Export the seedCategories function
